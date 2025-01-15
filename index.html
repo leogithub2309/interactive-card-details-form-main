@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive card details form</title>
+  <link rel="stylesheet" href="./styles.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+      
+  </style>
+</head>
+<body>
+
+  <!--
+  
+ Completed state start
+
+  Thank you!
+  We've added your card details
+  Continue-->
+
+  <section class="container-card">
+    <article class="cards">
+        <div class="card-front">
+          <img src="./images/bg-card-front.png" alt="front">
+          <div class="info-card-front">
+            <img src="./images/card-logo.svg" alt="Logo">
+            <div class="nro-card-front">
+                <span class="firts-digit">0000</span>
+                <span class="second-digit">0000</span>
+                <span class="third-digit">0000</span>
+                <span class="four-digit">0000</span>
+            </div>
+            <p class="user-info">
+              <span class="user">Jane Appleseed</span>
+              <span class="date-exp">00/00</span>
+            </p>
+          </div>
+        </div>
+        <div class="card-back">
+          <img src="./images/bg-card-back.png" alt="back">
+          <div class="info-card-back">
+            <span class="last-digit">000</span>
+          </div>
+        </div>
+    </article>
+    <article class="cards-form">
+      <form action="#" autocomplete="off">
+        <div class="input">
+          <label for="name">Cardholder Name</label>
+          <input type="text" name="name" id="name" placeholder="e.g. Jane Appleseed" 
+          pattern="^([A-Za-zÑñÁáÉéÍíÓóÚú]+['\-]{0,1}[A-Za-zÑñÁáÉéÍíÓóÚú]+)(\s+([A-Za-zÑñÁáÉéÍíÓóÚú]+['\-]{0,1}[A-Za-zÑñÁáÉéÍíÓóÚú]+))*$" 
+          required>
+        </div>
+        <div class="input">
+          <label for="card">Card Number</label>
+          <input type="text" name="card" id="card" placeholder="e.g. 1234 5678 9123 0000" pattern="^[0-9]+$" required >
+        </div>
+        <div class="date">
+            <div class="input-date">
+              <section class="flex-input">
+                <label for="mm">Exp. Date (MM/YY)</label>
+                <div class="flex">
+                  <div class="input">
+                    <input type="text" name="mm" id="mm" placeholder="MM" pattern="^[0-9]+$" required>
+                  </div>
+                  <div class="input">
+                      <input type="text" name="yy" id="yy" placeholder="YY" pattern="^[0-9]+$" required>
+                  </div>
+                </div>
+              </section>
+            </div>
+            <div class="input">
+              <label for="cvg">CVC</label>
+              <input type="text" name="cvg" id="cvg" placeholder="e.g. 123" pattern="^[0-9]+$" required>
+            </div>
+        </div>
+        <button type="submit" class="btn-submit">Confirm</button>
+        
+      </form>
+    </article>
+    
+
+  </section>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">leosep1996@gmail.com</a>.
+  </div>
+
+
+  <script src="./index.js"></script>
+
+</body>
+</html>
