@@ -91,7 +91,7 @@ body{
 }
 
 
-@media(max-width: 600px){
+@media(max-width: 850px){
     .container-card{
         position: relative !important;
         width: 100%;
@@ -329,7 +329,7 @@ body{
 .date .input-date{
     width: 70%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     gap: 4px;
 }
@@ -340,6 +340,7 @@ body{
     font-size: 12px;
     text-align: left;
     font-weight: 700;
+   
 }
 
 .flex{
@@ -347,7 +348,7 @@ body{
     justify-content: space-between;
     align-items: center;
     gap: 8px;
-    margin-top: 2px;
+    margin-top: .550rem;
 }
 
 .btn-submit{
